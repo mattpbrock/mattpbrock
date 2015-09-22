@@ -1,0 +1,126 @@
+/* ============== PAGE STYLES ============== */
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+html { margin: 0; padding: 0; }
+
+body { margin: 0 auto; background-color: #fffcfc; font: 300 1em/1.5 'Lora', Georgia, serif; color: #333; width: 100%; overflow-y: scroll; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; margin: 1.414em 0 0.5em; font-weight: inherit; line-height: 1; }
+
+h1 { font-size: 2.827em; font-weight: 400; margin-top: 0; }
+h2 { font-size: 1.999em; font-weight: 400; }
+h3 { font-size: 1.999em; font-weight: 400; }
+h4 { font-size: 1.414em; font-weight: 400; }
+h5 { font-size: 0.900em; font-weight: 700; }
+h6 { font-size: 0.7500em; font-weight: 700; }
+
+
+/* ========================================================================= */
+/* ============== MAIN LAYOUT STYLES - MOBILE FIRST (< 469px) ============== */
+/* ========================================================================= */
+
+#Site-header { position: fixed; left: 0; height: 7em; text-align: center; width: 100%; padding: 0; background-color: #474747; display: block; box-shadow: 0px 0px 2px rgba(0,0,0,.9); z-index: 1000; }
+
+#Site-header a { text-decoration: none; }
+
+#Header { position: relative; height: 100%; padding: 1.414em; }
+
+.Header-photo { float: left; position: absolute; top: 18%; left: 44%; }
+
+#main-img { width: 4em; border-radius: 50%; border: 2px solid #2a2a2a; }
+
+.Header-info { float: left; position: absolute; top: 17%; left: 5%; margin-top: 0; text-align: left; }
+
+#main-title { font-size: 1.25em; font-weight: 400; line-height: 1.25; margin-top: .5em; margin-bottom: 0; color: #fffcfc; transition: .1s color ease; }
+#main-title:hover { color: #92cda4; }
+
+#byline { margin-top: .25em; margin-bottom: 0; font-size: 0.675em; }
+#byline span { display: none; font-family: 'Open Sans', sans-serif; font-weight: 300; text-transform: uppercase; color: #999; }
+#byline span:first-of-type { display: block; }
+
+.Header-social { position: absolute; float: right; right: 4.5%; margin-top: .675em; }
+.Header-social img { width: 2em; opacity: .6; transition: .15s opacity ease; }
+.Header-social img:hover { opacity: .9; }
+
+#main-content { position: relative; top: 10em; margin: 0 auto; padding: 0 1.25em 3em; width: 100%; display: block; }
+
+.Header-nav { display: none; font-size: 1em; /*  position: absolute; float: left; left: 7%; top: 65%; */ }
+.Header-nav ul { padding: 0; }
+.Header-nav li { list-style: none; }
+.Header-nav li a { }
+
+a { color: #df9278; transition: .1s all ease; }
+
+a:hover { color: #d15e39; }
+
+
+
+/* =========================================== */
+/* ============== MEDIA QUERIES ============== */
+/* =========================================== */
+
+@media (min-width: 469px) {
+	
+	body { font-size: 1.125em; }
+
+	#main-content { padding: 0 3em 3em; }
+	
+	.Header-social { right: 5%; }
+	
+}
+
+
+
+@media (min-width: 769px) {
+	
+	body { font-size: 1.125em; }
+	
+	#Site-header { float: left; width: 30%; height: 100%; box-shadow: 0px -3px 2px rgba(0,0,0,.9); }
+	
+	#Header { padding: 50% 0; }
+	
+	.Header-info { position: relative; float: none; top: 0; left: 0; text-align: center; }
+	
+	.Header-photo { position: relative; float: none; top: 0; left: 0; }
+	
+	.Header-nav { display: block; }
+	
+	#main-title { font-size: 1.675em; font-weight: 300; margin-top: .5em; }
+	
+	#main-img { width: 5.654em; border-width: 3px; }
+	
+	#byline { margin-top: .707em; font-size: 0.675em; }
+	
+	#byline span { display: block; }
+	
+	#byline span:first-of-type { display: none; }
+	
+	.Header-social { position: relative; float: none; right: 0; margin-top: 1.5em; }
+	
+	.Header-social img { width: 40px; }
+	
+	#main-content { top: 0; float: right; width: 70%; min-height: 100%; padding: 4em 5em 3em 3em; }
+	
+}
+
+@media (min-width: 1200px) {
+	
+	#Site-header { width: 27%; }
+	
+	h1 { font-size: 3.998em; font-weight: 400; margin-top: 0; }
+	h2 { font-size: 2.827em; font-weight: 400; }
+	h3 { font-size: 1.999em; font-weight: 400; }
+	h4 { font-size: 1.414em; font-weight: 400; }
+	h5 { font-size: 1.000em; font-weight: 700; }
+	h6 { font-size: 0.900em; font-weight: 700; }
+	
+	#main-content { width: 73%; padding: 4em 6em 3em 4em; }
+	
+}
+
+
+
+
