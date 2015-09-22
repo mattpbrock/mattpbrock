@@ -2,4 +2,4 @@ RewriteEngine On
 RewriteRule ^about/$ /about.php
 RewriteRule ^contact/$ /contact.php
 
-RewriteBase /www/mattpbrock/
+RewriteBase /www/
