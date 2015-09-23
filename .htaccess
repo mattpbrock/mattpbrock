@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteRule ^about/$ /www/mattpbrock/about.php [L]
-RewriteRule ^contact/$ /www/mattpbrock/contact.php [L]
+RewriteRule ^about$ /www/mattpbrock/about.php [L]
+RewriteRule ^contact$ /www/mattpbrock/contact.php [L]
 
 RewriteBase /www/mattpbrock/
