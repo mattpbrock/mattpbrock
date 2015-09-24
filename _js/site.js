@@ -7,17 +7,17 @@ $(document).ready(function(){
 
 function initialize(){
 
-	slideMenu();
+	slideHeader();
 	
 }
 
 
-function slideMenu(){
+function slideHeader(){
 	
 	// Must be separate from content that is pushed
-	var $slideMenu, $pageWrapper;
+	var $slideHeader, $pageWrapper;
 	
-	$slideMenu = $('#slideMenu').detach();	
+	$slideHeader = $('#Site-header');	
 	$pageWrapper = '<div id="page-wrapper"></div>';
 	
 	$('body').wrapInner($pageWrapper).append($slideMenu);
