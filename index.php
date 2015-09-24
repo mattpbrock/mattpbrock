@@ -17,6 +17,5 @@ $section = "home"; ?>
 	<section class="second">
 		
 	</section>
-	
 
 <?php include(ROOT_PATH . "_inc/footer.php"); ?>
