@@ -1,12 +1,16 @@
+$(document).ready(function(){
+	
+	//setup everything
+	initialize();
+	
+});
 
-/*============================================
-*
-*                 slideMenu()
-* 
-*      (built by Matt Brock, August 2015)
-*
-*==============================================
-*/
+function initialize(){
+
+	slideMenu();
+	
+}
+
 
 function slideMenu(){
 	
