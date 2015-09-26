@@ -20,23 +20,23 @@ function slideHeader(){
 	$slideHeader = $('#Site-header');	
 	$pageWrapper = '<div id="page-wrapper"></div>';
 	
-	$('body').wrapInner($pageWrapper).append($slideMenu);
+	$('body').wrapInner($pageWrapper).append($slideHeader);
 	
-	function slideMenuGo(){
-		$('#slideMenu').toggleClass('change');
+	function slideHeaderGo(){
+		$('#slideHeader').toggleClass('change');
 		$('#page-wrapper').toggleClass('pushed');
-		$('#slideMenu--mask').toggleClass('is-active');
-		$('body').toggleClass('has-active-slideMenu');
+		$('#slideHeader--mask').toggleClass('is-active');
+		$('body').toggleClass('has-active-slideHeader');
 	}
 	
-	$('.slideMenu--trigger, #slideMenu--mask, .slideMenu--close').on('click', function(e){
+	$('.slideHeader--trigger, #slideHeader--mask, .slideHeader--close').on('click', function(e){
 		e.preventDefault();
-		slideMenuGo();
+		slideHeaderGo();
 	});
 	
-	$('.slideMenu--link').click(function(e) {
+	$('.slideHeader--link').click(function(e) {
 		e.preventDefault();
-		slideMenuGo();
+		slideHeaderGo();
 		var goTo = this.getAttribute("href");
 		setTimeout(function(){ window.location = goTo; }, 300);
 	});
