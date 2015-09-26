@@ -14,6 +14,9 @@ function initialize(){
 
 function slideHeader(){
 	
+	// PROBLEM: Need a simple action -- when button in top right of header
+	// is clicked, Site-header slides left with body.
+	
 	// Must be separate from content that is pushed
 	var $slideHeader, $pageWrapper;
 	
