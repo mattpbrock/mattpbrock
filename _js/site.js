@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 function initialize(){
 
-	slideHeader();
+// 	slideHeader();
 	
 }
 
