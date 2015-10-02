@@ -79,9 +79,9 @@ a:hover { color: #d15e39; }
 	body { font-size: 1.125em; }
 
 	/* slideHeader() styles: Hamburger menu and associated jQuery styles for transitions */
-	#nav-icon-wrap { padding: 11px 10px 11px 15px; margin-top: 20px; width: 65px; background-color: #333; border-bottom-right-radius: 5px; border-top-right-radius: 5px; left: 0; position: fixed; z-index: 1001; opacity: .9; border: 1px solid transparent; cursor: pointer; transition: opacity 100ms ease; }
+	#nav-icon-wrap { padding: 11px 10px 11px 15px; margin-top: 20px; width: 65px; background-color: #333; border-bottom-right-radius: 5px; border-top-right-radius: 5px; left: 0; position: fixed; z-index: 1001; opacity: .9; cursor: pointer; transition: opacity 100ms ease; }
 	
-	#nav-icon-wrap:hover { border: 1px solid #303030; opacity: 1; }
+	#nav-icon-wrap:hover { opacity: 1; }
 	
 /* 	#nav-icon-wrap:hover #nav-icon span { background: #fff; } */
 	
