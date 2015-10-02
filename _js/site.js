@@ -12,6 +12,26 @@ function initialize(){
 }
 
 
+
+
+
+$('#nav-icon').on('click', function(e){
+	var $headerWidth = $('#Site-header').outerWidth;
+	console.log($headerWidth);
+	e.preventDefault();
+});
+
+
+
+
+
+
+
+
+
+
+
+
 function slideHeader(){
 	
 	// PROBLEM: Need a simple action -- when button in top right of header
@@ -20,7 +40,7 @@ function slideHeader(){
 	// Must be separate from content that is pushed
 	var $slideHeader, $pageWrapper;
 	
-	$slideHeader = $('#Site-header');	
+	$slideHeader = $('#Site-header');
 	$pageWrapper = '<div id="page-wrapper"></div>';
 	
 	$('body').wrapInner($pageWrapper).append($slideHeader);

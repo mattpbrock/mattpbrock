@@ -18,8 +18,17 @@
 <body>
 
 <?php include_once("analyticstracking.php"); ?>
+	
+<div id="nav-icon-wrap">
+	<div id="nav-icon">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
 
 <header id="Site-header">
+	
 	<div id="Header">
 		
 		<a class="Header-photo" href="<?php echo BASE_URL; ?>"><img id="main-img" src="<?php echo BASE_URL ?>_img/mpb_suit-500px.jpg" alt="Matt Brock"></a>
