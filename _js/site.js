@@ -7,7 +7,25 @@ $(document).ready(function(){
 
 function initialize(){
 
-// 	slideHeader();
+	slideHeader();
+	
+}
+
+
+
+function slideHeader(){
+	
+	$('#nav-icon').on('click', function(e){
+		var buffer = 10;
+		var $headerWidth = $('#Site-header').outerWidth();
+		var $siteHeader = $('#Site-header');
+		var $mainContent = $('#main-content');
+		
+		$siteHeader.toggleClass('slideLeft');
+		$mainContent.toggleClass('slideLeft');
+		
+		e.preventDefault();
+	});
 	
 }
 
@@ -15,29 +33,18 @@ function initialize(){
 
 
 
-$('#nav-icon').on('click', function(e){
-	var $headerWidth = $('#Site-header').outerWidth;
-	console.log($headerWidth);
-	e.preventDefault();
-});
 
 
 
 
 
-
-
-
-
-
-
-
-function slideHeader(){
+// function slideHeader(){
 	
 	// PROBLEM: Need a simple action -- when button in top right of header
 	// is clicked, Site-header slides left with body.
 	
 	// Must be separate from content that is pushed
+/*
 	var $slideHeader, $pageWrapper;
 	
 	$slideHeader = $('#Site-header');
@@ -64,3 +71,4 @@ function slideHeader(){
 		setTimeout(function(){ window.location = goTo; }, 300);
 	});
 }
+*/
